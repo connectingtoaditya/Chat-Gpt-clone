@@ -1,0 +1,4 @@
+git status // check the current status of my code //
+git add . // add all the changes in parking area //
+git commit -m "my comment" // it is used to make a notes in github //
+git push origin master // push the code in github //
