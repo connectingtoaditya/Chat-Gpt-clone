@@ -1,14 +1,14 @@
 @media (max-width: 768px) {
-  .sidebar, .chat, .select {
+  .sidebar, .chat, .select, .rightnav-chat {
     display: none;
   }
-.sidebar {
-/* display: flex; */
+.plus_btn {
+  right: 0;
 }
 
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .menu-icon {
     display: none;
   }

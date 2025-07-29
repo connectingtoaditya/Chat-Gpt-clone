@@ -161,6 +161,7 @@ bottom: 1px;
 }
 
 /* RIGHT-SIDE */
+
 .right_side{
   position: relative;
   min-height: 100vh;
@@ -172,7 +173,7 @@ bottom: 1px;
 .rightnav-chat {
   display: flex;
   position: relative;
-    left: 10px;
+  left: 10px;
 }
 
 .select {
