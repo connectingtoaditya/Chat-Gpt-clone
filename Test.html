@@ -1,19 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hover Note</title>
+  <style>
+    .wrapper {
+      position: relative;
+      display: inline-block;
+      margin: 100px;
+    }
+
+    .button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .note {
+      display: none;
+      position: absolute;
+      top: 100%; /* below the element */
+      left: 0;
+      background-color: #222;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 4px;
+      margin-top: 6px;
+      white-space: nowrap;
+      font-size: 14px;
+      z-index: 10;
+    }
+
+    .wrapper:hover .note {
+      display: block;
+    }
+  </style>
 </head>
 <body>
-  
 
+  <div class="wrapper">
+    <div class="button">Hover me</div>
+    <div class="note">This is a note below</div>
+  </div>
 
-  <script>
-   let myDate = new Date();
-   console.log(myDate.getDate());
-   console.log(myDate.getMonth());
-   console.log(myDate.getFullYear())
-  </script>
 </body>
 </html>
