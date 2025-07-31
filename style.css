@@ -22,7 +22,27 @@
   color: rgb(175, 175, 175);
 padding: 9px;
     width: 38px;
+    margin: 3px 0 0 0;
+}
 
+.sidebar-note {
+  display: none;
+  position: absolute;
+  top: 5.5%;
+  left: 10%;
+  font-size: 12px;
+  background-color: black;
+  z-index: 1;
+  /* width: 85px; */
+  padding: 6px;
+  border-radius: 6px;
+  /* height: 18px; */
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.sidebarhover:hover .sidebar-note {
+  display: block;
 }
 
 
@@ -264,10 +284,51 @@ ul {
     padding: 8px;
 }
 
-.temprorary-chat {
+/* .searchplus-hover {
+  background-color: red;
+  width: 15vw;
+  height: 12vh;
+} */
+
+.searchplus-chat {
+  display: none;
+  position: absolute;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 8px;
+  /* top: 15px; */
+  background: black;
+  border-radius: 9px;
+}
+
+.searchplus-hover:hover .searchplus-chat {
+  display: block;
+} 
+
+.temporary-chat {
   padding: 8px;
   width: 36px;
   margin: 4px  0 0;
+}
+
+.temporarychat-hover {
+  /* position: absolute; */
+}
+
+.temporarychat-note {
+  display: none;
+  position: absolute;
+  /* top: 12px; */
+  right: 11px;
+  padding: 5px;
+  background-color: black;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.temporarychat-hover:hover .temporarychat-note {
+  display: block;
 }
 
 .get-plus {
@@ -368,11 +429,41 @@ input {
   width: 38px;
 }
 
+.mic-chat {
+  display: none;
+  padding: 6px;
+  background-color: black;
+  border-radius: 8px;
+  position: absolute;
+  font-size: 12px;
+  font-weight: 500;
+  /* border: 2px solid wheat; */
+  /* width: 111px; */
+}
+
+.mic-hover:hover .mic-chat {
+  display: block;
+}
+
 .voice {
       background-color: #424242;
     border-radius: 20px;
     padding: 9px;
     width: 39px;
+}
+
+.voice-chat {
+  display: none;
+  position: absolute;
+  padding: 6px;
+  background-color: black;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.voice-hover:hover .voice-chat {
+  display: block;
 }
 
 .searchbar1 {
@@ -405,17 +496,11 @@ input {
   /* background-color: #8b8b8b; */
 }
 
-.sidebar::-webkit-scrollbar-track{
-  /* color: red; */
-  /* background-color: yellow; */
-}
-
 .sidebar::-webkit-scrollbar-track {
-  /* background-color: yellow; */
+  background-color: yellow;
   /* scrollbar-width: thin; */
   /* margin: -234px 0 0 0; */
   /* scrollbar-color: transparent; */
-color: yellow;
 }
 
 .sidebar3 a:hover, .sidebar2-item:hover, .sidebar1-item:hover, .chatgpt-icon:hover, .sidebar-icon:hover, .rightnav-chat:hover {
@@ -430,7 +515,7 @@ color: yellow;
   text-overflow: ellipsis;
 }
 
-.temprorary-chat:hover {
+.temporary-chat:hover {
   border-radius: 20px;
   background-color: #303031;
 }
