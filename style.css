@@ -201,8 +201,9 @@ ul {
 
 .rightnav-chat {
   display: flex;
-  position: relative;
-  left: 10px;
+  /* position: relative; */
+  /* left: 10px; */
+  padding: 8px 10px;
 }
 
 .select {
@@ -251,10 +252,22 @@ ul {
   right: 27px;
 }
 
-.plus {
-  position: relative;
-  right: 1px;
-  bottom: 1px;
+.search-plus {
+  /* position: relative; */
+  /* right: 1px; */
+  /* bottom: 1px; */
+  /* width: 20px; */
+  height: 20px;
+  padding: 5px;
+  width: 36px;
+    height: 36px;
+    padding: 8px;
+}
+
+.temprorary-chat {
+  padding: 8px;
+  width: 36px;
+  margin: 4px  0 0;
 }
 
 .get-plus {
@@ -331,6 +344,10 @@ h1 {
 
 }
 
+.tools {
+  font-size: 14px;
+}
+
 .title {
   color: #fff;
   font-size: 28px;
@@ -341,31 +358,46 @@ input {
   background-color: transparent;
   outline: none;
   border: none;
-  margin: 22px;
+  margin: 22px 20px 13px;
   font-size: 18px;
   width: 100%;
 }
 
+.mic {
+  padding: 9px;
+  width: 38px;
+}
+
 .voice {
-  background-color: #424242;
-  border-radius: 15px;
+      background-color: #424242;
+    border-radius: 20px;
+    padding: 9px;
+    width: 39px;
 }
 
 .searchbar1 {
   color: white;
   display: flex;
   justify-content: space-between;
-  margin: 0 18px 0 18px;
+  margin: 0 11px 0 9px;
+  align-items: center;
   /* word-spacing: 5px; */
 }
 
 .searchitem {
-  gap: 22px;
+  /* gap: 22px; */
   display: flex;
+  align-items: center;
+}
+
+.rightsearch-item {
+  display: flex;
+  padding: 6px;
+  gap: 5px;
 }
 
 .searchitem span {
-  margin: 0 0 0 -15px;
+  /* margin: 0 0 0 -15px; */
 }
 
 .sidebar::-webkit-scrollbar {
@@ -386,9 +418,9 @@ input {
 color: yellow;
 }
 
-.sidebar3 a:hover, .sidebar2-item:hover, .sidebar1-item:hover, .chatgpt-icon:hover, .sidebar-icon:hover {
+.sidebar3 a:hover, .sidebar2-item:hover, .sidebar1-item:hover, .chatgpt-icon:hover, .sidebar-icon:hover, .rightnav-chat:hover {
   /* border: 5px solid white; */
-  background-color: #303031;
+  background-color: #413f3f;
   /* width: 23vw; */
   /* height: 55px; */
   border-radius: 12px;
@@ -396,4 +428,19 @@ color: yellow;
   /* line-height: 40px; */
   /* width: auto; */
   text-overflow: ellipsis;
+}
+
+.temprorary-chat:hover {
+  border-radius: 20px;
+  background-color: #303031;
+}
+
+.search-plus:hover, .mic:hover {
+  background-color: #424242;
+  border-radius: 20px;
+}
+
+.rightsearch-item:hover {
+  background-color: #424242;
+  border-radius: 20px;
 }
